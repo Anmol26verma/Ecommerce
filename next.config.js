@@ -4,17 +4,18 @@ const nextConfig = {
     serverRuntimeConfig: {
         dbConfig: {
             host: 'localhost',
-            port: 3306,
-            user: 'root',
-            password: 'Cfvmb1aY6TEgSaPY', // @@@
-            database: 'next-js-registration-login-example'
+            port: 27017,
+            user: 'vermaanmol807',
+            password: 'PONAOJ9TgROKCbyK', // @@@
+            database: 'mongodb://localhost:27017/login'
         },
         secret: 'THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING'
     },
     publicRuntimeConfig: {
         apiUrl: process.env.NODE_ENV === 'development'
-            ? `mongodb+srv://vermaanmol807:${password}@cluster0.hoblw19.mongodb.net/` // development api
-            : 'http://localhost:3000/api' // production api
+            ? `mongodb+srv://vermaanmol807:PONAOJ9TgROKCbyK@cluster0.oya8azt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0` // development api
+            : 'http://localhost:27017/login' // production api
+            
     }
 }
 
